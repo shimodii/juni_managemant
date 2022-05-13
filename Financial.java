@@ -9,8 +9,24 @@ public class Financial {
 				//give lone 
 			}
 		}
+		int payTime (int ID){
+			if (/*current time*/ == /* pay day */) {
+				return 1;
+			}
+			return 0;
+		}
+		void checkLoan (int ID){
+			if (payTime(ID)){
+				//send sms
+			}
+		}
 		public void teacher(int ID,int option){
 			
 		}
+		public void employee(int ID, int option){
+		
+		}
 	}
 }
+
+
