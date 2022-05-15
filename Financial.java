@@ -4,7 +4,10 @@ public class Financial {
     //loan part
     public class Loan {
         class Option {
-            public int[] options={100,200,300,400,500};
+            String[] opt=new String[5]={"10$-12M","15$-18M","20$-24M","25$-30M","30$-36m"};
+            //time = (index + 2) * 6
+            //quantity = (index + 2) * 5
+            
             public int loanQuantity, loanDuration,paymentQuantity;
             paymentQuantity = loanQuantity / loanDuration;
 
@@ -13,35 +16,10 @@ public class Financial {
 
                 String[] availableOptions= new String[5];
                 for(int i=0;i<5;i++){
-                    if(options[i]</*emp or tchr.credit*/){
-
+                    if( (i+1)*100 < /*emp or tchr.credit*/ ){
+                        //opt[i].add.temp.table => available
                     }
                 }
-//                    if(options[i]</*emp or tchr.credit*/){
-//                        availableOptions[i]="Option"+i;
-//                        System.out.println(availableOptions[i]);
-//                        if(i==0){
-//                            System.out.println("Quantity = 10 million Toman");
-//                            System.out.println("Loan Duration = 12 months");
-//                        }
-//                        if(i==1){
-//                            System.out.println("Quantity = 15 million Toman");
-//                            System.out.println("Loan Duration = 18 months");
-//                        }
-//                        if(i==2){
-//                            System.out.println("Quantity = 20 million Toman");
-//                            System.out.println("Loan Duration = 24 months");
-//                        }
-//                        if(i==3){
-//                            System.out.println("Quantity = 25 million Toman");
-//                            System.out.println("Loan Duration = 30 months");
-//                        }
-//                        if(i==4){
-//                            System.out.println("Quantity = 30 million Toman");
-//                            System.out.println("Loan Duration = 36 months");
-//                        }
-//                    }
-//                }
             }
         }
                 }
