@@ -13,16 +13,13 @@ public class Financial {
 
 
             public void calculate(){
-
-                String[] availableOptions= new String[5];
                 for(int i=0;i<5;i++){
                     if( (i+1)*100 < /*emp or tchr.credit*/ ){
-                        //opt[i].add.temp.table => available
+                        //opt[i].add.temp.loan.table => available
                     }
                 }
             }
         }
-                }
         public void student(int ID, int option){
             if ( /* db.student.bedehi.id(ID) */ > 0 ){
                 //error
@@ -60,7 +57,6 @@ public class Financial {
             //db.emp.payDue.id(ID)=option.setDue;
 
 
-        }
         }
 
     }
