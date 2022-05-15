@@ -1,5 +1,3 @@
-package com.sina;
-
 public class Financial {
     //loan part
     public class Loan {
@@ -41,23 +39,22 @@ public class Financial {
         }
         public void teacher(int ID,int option){
             if(/*db.tchr.loanTimes.id(ID)>1)*/){
-             //error}
+				//error
+			}
             else{
                 //db.tchr.balance.id(ID)-=option.quantity;
                 //db.tchr.payDue.id(ID)=option.setDue;
                 //db.tchr.loanTimes++;
             }
-
         }
         public void employee(int ID, int option){
-            if(/*db.emp.credit<option.number)*/)
-            //error
-            else
-            //db.emp.balance.id(ID)-=option.quantity;
-            //db.emp.payDue.id(ID)=option.setDue;
-
-
+            if(/*db.emp.credit<option.number)*/){
+				//error
+			}
+            else{
+				//db.emp.balance.id(ID)-=option.quantity;
+				//db.emp.payDue.id(ID)=option.setDue;
+			}
         }
-
     }
 }
