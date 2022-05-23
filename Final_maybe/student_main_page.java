@@ -19,7 +19,7 @@ public class Main {
 		JMenu tahsiliKarname = new JMenu("karname");
 		/* --karname submenu-- */
 		JMenuItem karnameMoshahede = new JMenuItem("moshahede karname");
-		JMenuItem KarnameEteraz = new JMenuItem("eteraz be nomre");
+		JMenuItem karnameEteraz = new JMenuItem("eteraz be nomre");
 
 		//adding submenus
 		studentMB.add(menuTahsili);
