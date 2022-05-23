@@ -21,7 +21,7 @@ public class Main {
 		JMenuItem karnameMoshahede = new JMenuItem("moshahede karname");
 		JMenuItem karnameEteraz = new JMenuItem("eteraz be nomre");
 
-		//adding submenus
+		//adding submenus to menubar
 		studentMB.add(menuTahsili);
 		studentMB.add(menuMali);
 		studentMB.add(menuEdari);
