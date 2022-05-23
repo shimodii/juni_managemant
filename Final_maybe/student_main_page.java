@@ -11,7 +11,15 @@ public class Main {
 		JMenu menuMali = new JMenu("mali");
 		JMenu menuEdari = new JMenu("edari");
 		JMenuItem tahsiliHazf = new JMenuItem("hazf/ezafe");
+		/* --tahsili menu submenus-- */
 		JMenuItem tahsiliEntekhab = new JMenuItem("entekhab");
+		JMenuItem tahsiliMoshahedeD = new JMenuItem("moshahede drus");
+		JMenuItem tahsiliArzeshyabi = new JMenuItem("arzeshyabi ostad");
+		JMenuItem tahsiliMoshahedeV = new JMenuItem("moshahede vaziyat");
+		JMenu tahsiliKarname = new JMenu("karname");
+		/* --karname submenu-- */
+		JMenuItem karnameMoshahede = new JMenuItem("moshahede karname");
+		JMenuItem KarnameEteraz = new JMenuItem("eteraz be nomre");
 
 		//adding submenus
 		studentMB.add(menuTahsili);
@@ -20,6 +28,13 @@ public class Main {
 		/* --tahsili submenu-- */
 		menuTahsili.add(tahsiliEntekhab);
 		menuTahsili.add(tahsiliHazf);
+		menuTahsili.add(tahsiliMoshahedeD);
+		menuTahsili.add(tahsiliArzeshyabi);
+		menuTahsili.add(tahsiliMoshahedeV);
+		menuTahsili.add(tahsiliKarname);
+		/* .:karname submenu:. */
+		tahsiliKarname.add(karnameMoshahede);
+		tahsiliKarname.add(karnameEteraz);
 
 		//adding elements to mainFrame
 		mainFrame.setJMenuBar(studentMB);
