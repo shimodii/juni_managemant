@@ -48,3 +48,36 @@ base of methods : KIARASH azize del {
         "*$bd$$$$      '*$$$$$$$$$$$o+#" 
              """"          """"""" 
 
+
+
+
+
+.: UI_Submenu :.
+
+
+.
+|-- staff
+|-- student
+|   |-- edari
+|   |   |-- darkhast_morakhasi
+|   |   `-- darkhst_form_eshteghal_be_tahsil
+|   |-- mali
+|   |   |-- darkhast_vaam
+|   |   |-- moshahede_vaiyat_mali
+|   |   `-- pardakht_shahrie
+|   |-- motefareghe
+|   |   |-- contact_us
+|   |   |-- guide
+|   |   `-- profile_edit
+|   `-- tahsili
+|       |-- arzeshyabi_ostad
+|       |-- entekhab_vahed
+|       |-- hazf_ezafe
+|       |-- karname
+|       |   |-- eteraz
+|       |   `-- moshahede_karname
+|       |-- moshahede_drus
+|       `-- moshahede_vaziyat
+`-- teacher
+
+23 directories, 1 file
