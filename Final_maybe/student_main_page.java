@@ -3,35 +3,35 @@ import javax.swing.*;
 public class Main {
 	public static void main(String[] args) {
 		//mainFrame 
-		JFrame mainFrame = new JFrame("Login");
+		JFrame mainFrame = new JFrame("صفحه اصلی");
 
 		//variables
 		JMenuBar studentMB = new JMenuBar();
-		JMenu menuTahsili = new JMenu("tahsili");
-		JMenu menuMali = new JMenu("mali");
-		JMenu menuEdari = new JMenu("edari");
-		JMenu menuExtra = new JMenu("motefareghe");
+		JMenu menuTahsili = new JMenu("امور تحصیلی");
+		JMenu menuMali = new JMenu("امور مالی");
+		JMenu menuEdari = new JMenu("امور اداری");
+		JMenu menuExtra = new JMenu("متفرقه");
 		/* --tahsili menu submenus-- */
-		JMenuItem tahsiliHazf = new JMenuItem("hazf/ezafe");
-		JMenuItem tahsiliEntekhab = new JMenuItem("entekhab");
-		JMenuItem tahsiliMoshahedeD = new JMenuItem("moshahede drus");
-		JMenuItem tahsiliArzeshyabi = new JMenuItem("arzeshyabi ostad");
-		JMenuItem tahsiliMoshahedeV = new JMenuItem("moshahede vaziyat");
-		JMenu tahsiliKarname = new JMenu("karname");
+		JMenuItem tahsiliHazf = new JMenuItem("حذف و اضافه");
+		JMenuItem tahsiliEntekhab = new JMenuItem("انتخاب واحد");
+		JMenuItem tahsiliMoshahedeD = new JMenuItem("مشاهده دروس");
+		JMenuItem tahsiliArzeshyabi = new JMenuItem("ارزش یابی استاد");
+		JMenuItem tahsiliMoshahedeV = new JMenuItem("مشاهده وضعیت تحصیلی");
+		JMenu tahsiliKarname = new JMenu("کارنامه");
 		/* --karname submenu-- */
-		JMenuItem karnameMoshahede = new JMenuItem("moshahede karname");
-		JMenuItem karnameEteraz = new JMenuItem("eteraz be nomre");
+		JMenuItem karnameMoshahede = new JMenuItem("مشاهده کارنامه");
+		JMenuItem karnameEteraz = new JMenuItem("اعتراض به نمره");
 		/* --mali menu submenu-- */
-		JMenuItem maliPardakht = new JMenuItem("pardakht shahrie");
-		JMenuItem maliVaziyat = new JMenuItem("moshahede vaziyat mali");
-		JMenuItem maliVaam = new JMenuItem("darkhast vaam");
+		JMenuItem maliPardakht = new JMenuItem("پرداخت شهریه");
+		JMenuItem maliVaziyat = new JMenuItem("مشاهده تراز مالی");
+		JMenuItem maliVaam = new JMenuItem("درخواست وام");
 		/* --edari menu submenu-- */
-		JMenuItem edariMorakhasi = new JMenuItem("darkhast morakhasi");
-		JMenuItem edariEshteghal = new JMenuItem("form eshteghal be tahsil");
+		JMenuItem edariMorakhasi = new JMenuItem("ثبت مرخصی");
+		JMenuItem edariEshteghal = new JMenuItem("درخواست فرم اشتغال به تحصیلی");
 		/* --extra menu submenu-- */
-		JMenuItem extraProfedit = new JMenuItem("virayesh profile");
-		JMenuItem extraContact = new JMenuItem("rah haye ertebati");
-		JMenuItem extraGuide = new JMenuItem("rahnama");
+		JMenuItem extraProfedit = new JMenuItem("ویرایش پروفایل");
+		JMenuItem extraContact = new JMenuItem("راه های ارتباطی");
+		JMenuItem extraGuide = new JMenuItem("راهنما");
 
 		//adding submenus to menubar
 		studentMB.add(menuTahsili);
