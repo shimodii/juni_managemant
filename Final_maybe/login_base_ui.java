@@ -3,21 +3,21 @@ import javax.swing.*;
 public class Main {
 	public static void main(String[] args) {
 		//mainFrame 
-		JFrame mainFrame = new JFrame("Login");
+		JFrame mainFrame = new JFrame("ورود");
 
 		//variables
 		/* --LABELS-- */
-		JLabel user_id = new JLabel("Username:");
-		JLabel user_pass = new JLabel("Password:");
+		JLabel user_id = new JLabel("شماره کاربری:");
+		JLabel user_pass = new JLabel("رمز عبور:");
 		/* --USERNAME/PASSWORD FIELDS-- */
 		JTextField usernameField = new JTextField(8);
 		JPasswordField passwordFiled = new JPasswordField(10);
 		/* --RADIO BUTTONS-- */
-		JRadioButton staffButton = new JRadioButton("staff");
-		JRadioButton studentButton = new JRadioButton("student");
-		JRadioButton teacherButton = new JRadioButton("teacher");
+		JRadioButton staffButton = new JRadioButton("کارکنان");
+		JRadioButton studentButton = new JRadioButton("دانشجویان");
+		JRadioButton teacherButton = new JRadioButton("اساتید");
 		/* --LOGIN BUTTON-- */
-		JButton loginButton = new JButton("Login!");
+		JButton loginButton = new JButton("ورود");
 
 		//geo
 		user_id.setBounds(100,75,100,40); //username label
