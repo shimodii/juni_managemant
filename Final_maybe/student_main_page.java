@@ -1,6 +1,8 @@
 import javax.swing.*;
 
 public class Main {
+	//every UI class must called with username that loged-in so:
+	String username;
 	public static void main(String[] args) {
 		//mainFrame 
 		JFrame mainFrame = new JFrame("صفحه اصلی");
