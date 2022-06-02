@@ -18,7 +18,9 @@ public class Main {
 		JRadioButton teacherButton = new JRadioButton("اساتید");
 		/* --LOGIN BUTTON-- */
 		JButton loginButton = new JButton("ورود");
-
+		/* --GUIDE BUTTON-- */
+		JButton guideButton = new JButton("راهنما");
+			
 		//geo
 		user_id.setBounds(100,75,100,40); //username label
 		user_pass.setBounds(100,135,100,40); //password label
@@ -28,6 +30,7 @@ public class Main {
 		teacherButton.setBounds(200,205,80,30); //teacher button
 		studentButton.setBounds(300,205,80,30); //student button
 		loginButton.setBounds(200,300,120,30); //login button
+		guideButton.setBounds(420,10,70,27); //guide button
 
 		//adding elements to mainFrame
 		mainFrame.add(user_id);
@@ -38,6 +41,7 @@ public class Main {
 		mainFrame.add(studentButton);
 		mainFrame.add(teacherButton);
 		mainFrame.add(loginButton);
+		mainFrame.add(guideButton);
 
 		//mainFrame init
 		mainFrame.setSize(520,430);
