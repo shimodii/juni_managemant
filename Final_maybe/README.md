@@ -1,6 +1,6 @@
 ## Screenshot
-
- ___________________________________ 
+```
+ _____________________________ 
 /          داریم به فنا میریم \
 \ دوستان                      /
  ----------------------------- 
@@ -9,7 +9,7 @@
             (__)\       )\/\
                 ||----w |
                 ||     ||
-
+```
 ![login](./screenshots/login_base.png)
 ![studentmain](./screenshots/student_main.png)
 ![profileEdit](./screenshots/profile_edit.png)
