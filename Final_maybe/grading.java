@@ -62,11 +62,14 @@ public class grading {
 		
 		/* SUBMIT MARKS */
 		JButton subButton = new JButton("ثبت نمرات");
-		
+		subButton.setBounds(1020,800,100,40);
+
 		/* NEXT AND PRE PAGE BUTTON */
 		JButton nextPage = new JButton("صفحهه بعدی");
 		JButton prePage = new JButton("صفحه قبلی");
-
+		nextPage.setBounds(900,800,100,40);
+		prePage.setBounds(780,800,100,40);
+		
 		// DB QUERY ->  STORE NAMES FROM DB TO ARRAY
 
 		// store names from db to array
@@ -86,7 +89,10 @@ public class grading {
 			mainFrame.add(studentForm[i].nameLabel);
 			mainFrame.add(studentForm[i].markField);
 		}
-		
+		// adding submit and next and pre page BUTTONon to jframe
+		mainFrame.add(subButton);	
+		mainFrame.add(nextPage);
+		mainFrame.add(prePage);
 		//mainFrame init
 		mainFrame.setSize(1270,1000);
 		mainFrame.setLayout(null);
