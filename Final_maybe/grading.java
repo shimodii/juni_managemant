@@ -74,6 +74,8 @@ public class grading {
 		gradingForm[] studentForm = new gradingForm[namesArr.length];
 		for (int i=0;i<studentForm.length;i++){
 			studentForm[i].name=namesArr[i];
+			studentForm[i].nameLabel = new JLabel();
+			studentForm[i].markField = new JTextField();
 			studentForm[i].nameLabel.setText(studentForm[i].name);
 	
 			studentForm[i].nameLabel.setBounds(lxoff,yoff,100,30);
