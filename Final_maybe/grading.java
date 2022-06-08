@@ -58,7 +58,7 @@ public class grading {
 		// grading Form
 		int lxoff=150; // xoffset of lables 
 		int txoff=550; // xoffset of textfields
-		int yoff=150; // yoffset of lables and textfileds // will increase with loop index
+		int yoff=100; // yoffset of lables and textfileds // will increase with loop index
 		
 		/* SUBMIT MARKS */
 		JButton subButton = new JButton("ثبت نمرات");
@@ -79,9 +79,9 @@ public class grading {
 			studentForm[i].markField = new JTextField();
 			studentForm[i].nameLabel.setText(studentForm[i].name);
 	
-			studentForm[i].nameLabel.setBounds(lxoff,yoff,100,30);
-			studentForm[i].markField.setBounds(txoff,yoff,100,30);
-			yoff = yoff + 150 ;	
+			studentForm[i].nameLabel.setBounds(lxoff,yoff,200,30);
+			studentForm[i].markField.setBounds(txoff,yoff,50,40);
+			yoff = yoff + 70 ;	
 
 			mainFrame.add(studentForm[i].nameLabel);
 			mainFrame.add(studentForm[i].markField);
