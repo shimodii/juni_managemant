@@ -1,7 +1,7 @@
 import javax.swing.*;
 
 public class grading {
-	public class gradingForm {
+	public static class gradingForm {
 		String name="some";
 		JLabel nameLabel;
 		JTextField markField;
@@ -73,6 +73,7 @@ public class grading {
 		String[] namesArr = {"SINA","KIARASH","AMIRMOHAMMAD"}/*names from db*/ ;
 		gradingForm[] studentForm = new gradingForm[namesArr.length];
 		for (int i=0;i<studentForm.length;i++){
+			studentForm[i] = new gradingForm();
 			studentForm[i].name=namesArr[i];
 			studentForm[i].nameLabel = new JLabel();
 			studentForm[i].markField = new JTextField();
