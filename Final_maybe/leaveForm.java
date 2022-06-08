@@ -64,11 +64,16 @@ public class leaveForm {
 		mainFrame.setJMenuBar(studentMB);
 		/* .: end of menuBar:. */
 
+		//title
 		JLabel leaveTitleLabel = new JLabel("درخواست مرخصی");
 		leaveTitleLabel.setBounds(100,100,200,50);
 		
-		int leaveTime = 5/* DB VALUE */;
-		String leaveNote = "you have: [hr] ";
+		//quest hours
+
+		
+		// leave rest hours
+		int leaveTime = /* DB VALUE */;
+		String leaveNote = "ساعات باقی مانده :";
 		JLabel leaveNoteLabel = new JLabel();
 		leaveNoteLabel.setText(leaveNote + leaveTime);
 		leaveNoteLabel.setBounds(100,300,500,40);
