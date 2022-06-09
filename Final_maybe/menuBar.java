@@ -1,10 +1,9 @@
 import javax.swing.*;
 
 public class menuBar {
-	Jframe mainFrame;
-	public static void student(){
+	public static void student(JFrame mainFrame){
 		//mainFrame 
-		mainFrame = new JFrame("صفحه اصلی");
+		//JFrame mainFrame = new JFrame("صفحه اصلی");
 
 		//variables
 		JMenuBar studentMB = new JMenuBar();
@@ -71,7 +70,7 @@ public class menuBar {
 	}
 	public static void teacher(){
 		//mainFrame 
-		mainFrame = new JFrame("صفحه اصلی");
+		JFrame mainFrame = new JFrame("صفحه اصلی");
 
 		//variables
 		JMenuBar teacherMB = new JMenuBar();
