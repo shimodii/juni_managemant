@@ -141,7 +141,6 @@ public class menuBar {
 		JMenuItem extraGuide = new JMenuItem("راهنما");
 
 		//adding submenus to menubar
-		staffMB.add(menuTahsili);
 		staffMB.add(menuMali);
 		staffMB.add(menuEdari);
 		staffMB.add(menuExtra);
