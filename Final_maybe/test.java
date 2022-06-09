@@ -71,6 +71,5 @@ public class test {
 		mainFrame.setVisible(true);
 	}
 	public static void main(String args[]){
-		bar();
 	}
 }
