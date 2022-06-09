@@ -68,9 +68,9 @@ public class menuBar {
 		mainFrame.setLayout(null);
 		mainFrame.setVisible(true);
 	}
-	public static void teacher(){
+	public static void teacher(JFrame mainFrame){
 		//mainFrame 
-		JFrame mainFrame = new JFrame("صفحه اصلی");
+		//JFrame mainFrame = new JFrame("صفحه اصلی");
 
 		//variables
 		JMenuBar teacherMB = new JMenuBar();
@@ -121,7 +121,47 @@ public class menuBar {
 		mainFrame.setLayout(null);
 		mainFrame.setVisible(true);
 	}
-	public static void staff(){
+	public static void staff(JFrame mainFrame){
+		//mainFrame 
+		//JFrame mainFrame = new JFrame("صفحه اصلی");
+
+		//variables
+		JMenuBar staffMB = new JMenuBar();
+		JMenu menuMali = new JMenu("امور مالی");
+		JMenu menuEdari = new JMenu("امور اداری");
+		JMenu menuExtra = new JMenu("متفرقه");
+		/* --mali menu submenu-- */
+		JMenuItem maliVaziyat = new JMenuItem("مشاهده تراز مالی");
+		JMenuItem maliVaam = new JMenuItem("درخواست وام");
+		/* --edari menu submenu-- */
+		JMenuItem edariMorakhasi = new JMenuItem("ثبت مرخصی");
+		/* --extra menu submenu-- */
+		JMenuItem extraProfedit = new JMenuItem("ویرایش پروفایل");
+		JMenuItem extraContact = new JMenuItem("راه های ارتباطی");
+		JMenuItem extraGuide = new JMenuItem("راهنما");
+
+		//adding submenus to menubar
+		staffMB.add(menuTahsili);
+		staffMB.add(menuMali);
+		staffMB.add(menuEdari);
+		staffMB.add(menuExtra);
+		/* --mali submenu-- */
+		menuMali.add(maliVaziyat);
+		menuMali.add(maliVaam);
+		/* --edari submenu-- */
+		menuEdari.add(edariMorakhasi);
+		/* --extra submenu-- */
+		menuExtra.add(extraProfedit);
+		menuExtra.add(extraContact);
+		menuExtra.add(extraGuide);
+
+		//adding elements to mainFrame
+		mainFrame.setJMenuBar(staffMB);
+		
+		//mainFrame init
+		mainFrame.setSize(1270,1000);
+		mainFrame.setLayout(null);
+		mainFrame.setVisible(true);
 	
 	}
 }
