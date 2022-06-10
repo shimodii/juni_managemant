@@ -5,7 +5,7 @@ public class studentMain {
 		String test = "امیرمحد";
 		JFrame mainFrame = new JFrame("صفحه اصلی");
 		
-		functions.menuBar.teacher(mainFrame);
+		functions.menuBar.staff(mainFrame);
 		functions.header.showHeader(mainFrame,test);
 	}
 }
