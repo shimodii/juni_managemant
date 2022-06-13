@@ -15,3 +15,4 @@
 ![profileEdit](./screenshots/profile_edit.png)
 ![guide](./screenshots/new_guide.png)
 ![grading](./screenshots/grading.png)
+![unitRemove](./screenshots/remove_units.png)
