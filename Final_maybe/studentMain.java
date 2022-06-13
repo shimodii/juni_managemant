@@ -7,5 +7,6 @@ public class studentMain {
 		
 		functions.menuBar.student(mainFrame);
 		functions.header.showHeader(mainFrame,test);
+		studentPages.removeUnit(mainFrame,12);
 	}
 }
