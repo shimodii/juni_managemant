@@ -16,9 +16,10 @@ public class studentPages {
 		functions.menuBar.student(mainFrame);	
 	}
 	public static void removeUnit(JFrame mainFrame,int id){
+		//title 
 		JLabel titleLabel = new JLabel("حذف واحد درسی");
 		titleLabel.setBounds(800,150,100,30);
-		mainFrame.add(titleLabel);
+		mainFrame.add(titleLabel);	
 
 		String[] units = {"Math","AP","Phisycs"}/*store from DB*/ ;
 		int lxoff=100,cxoff=65,yoff=200;
@@ -38,6 +39,11 @@ public class studentPages {
 			
 			yoff = yoff + 50;	
 		}
+		//remove button
+		JButton removeButton = new JButton("حذف");
+		removeButton.setBounds(700,yoff,100,30);
+		mainFrame.add(removeButton);
+	
 	}
 	public static void viewUnits(JFrame mainFrame,int id){
 		functions.menuBar.student(mainFrame);
