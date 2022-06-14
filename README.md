@@ -20,5 +20,5 @@
 - [x] morakhasi
 - [x] edit profile
 - [x] guide
-- [ ] contact 
+- [x] contact 
 
