@@ -6,8 +6,8 @@
 # UI TODO
 - [x] login
 - [x] base page
-- [ ] unitselection
-- [ ] hazo e zafe
+- [x] unitselection
+- [x] hazo e zafe
 - [ ] viewing lessons
 - [ ] teachers grading
 - [ ] educational status
@@ -17,7 +17,7 @@
 - [ ] pardakht shahrie
 - [ ] viewing taraz mali
 - [ ] loan
-- [ ] morakhasi
+- [x] morakhasi
 - [x] edit profile
 - [x] guide
 - [ ] contact 
