@@ -9,6 +9,7 @@ public class studentMain {
 		functions.header.showHeader(mainFrame,test);
 		//studentPages.removeUnit(mainFrame,12);
 		//commonPages.profileEdit(mainFrame);
-		commonPages.leaveForm(mainFrame,12);
+		//commonPages.leaveForm(mainFrame,12);
+		commonPages.contactWays(mainFrame);
 	}
 }

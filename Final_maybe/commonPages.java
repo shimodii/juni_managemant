@@ -71,4 +71,21 @@ public class commonPages {
 		mainFrame.add(leaveValue);
 		mainFrame.add(leaveSub);
 	}
+	public static void contactWays(JFrame mainFrame){
+		JLabel phone = new JLabel("+98-912345678");
+		JLabel email = new JLabel("juni@contact.com");
+		JLabel postalCode = new JLabel("123456");
+		JLabel address = new JLabel("خیابان شهدای ۸ ام، پلاک ۱۰۵۷");
+		
+		int xoff=512;
+		phone.setBounds(xoff,200,300,30);
+		email.setBounds(xoff,260,300,30);
+		postalCode.setBounds(xoff,320,300,30);
+		address.setBounds(xoff,380,300,30);
+
+		mainFrame.add(address);
+		mainFrame.add(phone);
+		mainFrame.add(email);
+		mainFrame.add(postalCode);
+	}
 }
