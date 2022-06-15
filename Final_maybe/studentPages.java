@@ -49,7 +49,51 @@ public class studentPages {
 		
 	}
 	public static void teacherGrading(JFrame mainFrame,int id){
+		JLabel titleLabel = new JLabel("ارزشیابی اساتید");
+		JButton submitButton = new JButton("ثبت نظر");
+
+		titleLabel.setBounds(900,60,100,30);
+		mainFrame.add(titleLabel);
+
+		int goodCheckboxXoffset=500;
+		int goodLabelXoffset=530;
+		int badChechboxXoffset=700;
+		int badLabelXoffset=730;
+		int yoffset=100;
+		int teacherNameLabelXoffset=100;
 		
+
+		String[] teachersList = {"minoofam","panahi","amirmohammad"} /*DB*/;
+		teacherGradingForm[] tg = new teacherGradingForm[teachersList.length];
+		for(int i=0;i<teachersList.length;i++){
+			tg[i] = new teacherGradingForm();
+			//System.out.println(teachersList[i]);
+			tg[i].teacherName = teachersList[i];
+			//tg[i].teacherName = "helllo";
+			tg[i].teacherLabel = new JLabel();
+			tg[i].goodL = new JLabel("خوب");
+			tg[i].badL = new JLabel("بد");
+			tg[i].badC = new JCheckBox();
+			tg[i].goodC = new JCheckBox();
+	
+			tg[i].teacherLabel.setText(tg[i].teacherName);
+				
+			tg[i].teacherLabel.setBounds(teacherNameLabelXoffset,yoffset,200,30);
+			tg[i].goodC.setBounds(goodCheckboxXoffset,yoffset,30,30);
+			tg[i].goodL.setBounds(goodLabelXoffset,yoffset,100,30);
+			tg[i].badC.setBounds(badChechboxXoffset,yoffset,30,30);
+			tg[i].badL.setBounds(badLabelXoffset,yoffset,100,30);
+
+			yoffset = yoffset + 65;
+
+			mainFrame.add(tg[i].teacherLabel);
+			mainFrame.add(tg[i].goodC);
+			mainFrame.add(tg[i].goodL);
+			mainFrame.add(tg[i].badC);
+			mainFrame.add(tg[i].badL);
+		}
+		submitButton.setBounds(200,yoffset,140,40);
+		mainFrame.add(submitButton);
 	}
 	public static void eduStatus(JFrame mainFrame,int id){
 		
