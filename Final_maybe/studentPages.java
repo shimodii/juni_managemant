@@ -13,7 +13,7 @@ public class studentPages {
 	}
 	
 	public static void unitSelect(JFrame mainFrame,int id){
-		functions.menuBar.student(mainFrame);	
+			
 	}
 	public static void removeUnit(JFrame mainFrame,int id){
 		//title 
@@ -46,16 +46,48 @@ public class studentPages {
 	
 	}
 	public static void viewUnits(JFrame mainFrame,int id){
-		functions.menuBar.student(mainFrame);
+		
 	}
 	public static void teacherGrading(JFrame mainFrame,int id){
-		functions.menuBar.student(mainFrame);
+		
 	}
 	public static void eduStatus(JFrame mainFrame,int id){
-		functions.menuBar.student(mainFrame);
+		
 	}
 	public static void payment(JFrame mainFrame,int id){
-		functions.menuBar.student(mainFrame);
+		int dept = 200/*STORE FROM DB*/;
+		JLabel titleLabel = new JLabel("پرداخت شهریه");
+		JLabel deptNote = new JLabel();
+		JLabel deptStatus = new JLabel();
+		JButton payButton = new JButton("پرداخت");
+		JLabel countity = new JLabel("مبلغ");
+		JTextField moneyField = new JTextField();
+
+		if(dept >= 0){
+			deptStatus.setText("بده کار");
+		}else{
+			deptStatus.setText("بستانکار");
+		}
+		
+		deptNote.setText("تراز مالی: "+ dept);
+
+		//xy
+		titleLabel.setBounds(900,200,100,30);
+		deptNote.setBounds(400,300,100,30);
+		deptStatus.setBounds(550,300,100,30);
+		moneyField.setBounds(400,380,100,30);
+		countity.setBounds(550,380,100,30);
+		payButton.setBounds(400,450,100,40);
+		
+		//add
+		//
+		mainFrame.add(titleLabel);
+		mainFrame.add(deptNote);
+		mainFrame.add(deptStatus);
+		mainFrame.add(moneyField);
+		mainFrame.add(countity);
+		mainFrame.add(payButton);
+
 	}
 	public static void eshteghal(JFrame mainFrame,String nameStr){
 		functions.menuBar.student(mainFrame);	
