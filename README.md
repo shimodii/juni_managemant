@@ -14,8 +14,8 @@
 - [ ] karname
 - [x] grading
 - [ ] eteraz be nomre
-- [ ] pardakht shahrie
-- [ ] viewing taraz mali
+- [x] pardakht shahrie
+- [x] viewing taraz mali
 - [ ] loan
 - [x] morakhasi
 - [x] edit profile
