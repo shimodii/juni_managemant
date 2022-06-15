@@ -88,4 +88,11 @@ public class commonPages {
 		mainFrame.add(email);
 		mainFrame.add(postalCode);
 	}
+	public static void loan(JFrame mainFrame,int id){
+	//	int userCredit=/*from db*/;
+		JLabel titleLabel = new JLabel("درخواست وام");
+
+
+
+	}
 }
