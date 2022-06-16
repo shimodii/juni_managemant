@@ -164,7 +164,7 @@ public class commonPages {
 			yoffset = yoffset + 40;
 		}
 		yoffset = yoffset +20;
-		submitLoanButton.setBounds(120,yoffset,120,40);
+		submitLoanButton.setBounds(40,yoffset,120,40);
 		mainFrame.add(submitLoanButton);
 	}
 }
