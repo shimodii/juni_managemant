@@ -9,11 +9,9 @@
 - [x] unitselection
 - [x] hazo e zafe
 - [ ] viewing lessons
-- [ ] teachers grading
-- [ ] educational status
-- [ ] karname
+- [x] teachers grading
+- [ ] educational status , karname
 - [x] grading
-- [ ] eteraz be nomre
 - [x] pardakht shahrie
 - [x] viewing taraz mali
 - [ ] loan
