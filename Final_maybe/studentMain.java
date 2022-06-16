@@ -11,7 +11,8 @@ public class studentMain {
 		//studentPages.payment(mainFrame,12);
 		//studentPages.teacherGrading(mainFrame,12);
 		//studentPages.unitSelect(mainFrame,12);
-		commonPages.loan(mainFrame,12);
+		//commonPages.loan(mainFrame,12);
+		studentPages.viewUnits(mainFrame,12);
 		//commonPages.login(mainFrame);
 		//commonPages.profileEdit(mainFrame);
 		//commonPages.leaveForm(mainFrame,12);

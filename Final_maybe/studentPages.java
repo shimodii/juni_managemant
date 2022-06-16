@@ -2,9 +2,9 @@ import javax.swing.*;
 
 public class studentPages {
 	public static class unitForm {
-		String unitName,unitTeacher; //take from db
+		String unitName,unitTeacher,unitCode; //take from db
 		JCheckBox unitCb;
-		JLabel unitLabe,teacherLabel;
+		JLabel unitLabe,teacherLabel,unitCodeLabel;
 	}
 	public static class teacherGradingForm {
 		String teacherName;
@@ -96,9 +96,34 @@ public class studentPages {
 	}
 	public static void viewUnits(JFrame mainFrame,int id){
 		String[] currentUnits = {"math","ap"}/*FROM DB*/;
+		String[] teachersList = {"rostami","minoofam"};
+		String[] unitsCode = {"123","456"};
+
 		unitForm[] unitsList = new unitForm[currentUnits.length];
 
+		int unitLabelx=100,teacherLabelx=230,codeLabelx=360,yoffset=140;
+
+		for (int i=0;i<currentUnits.length;i++){
+			unitsList[i] = new unitForm();
 			
+			unitsList[i].unitName = currentUnits[i];
+			unitsList[i].unitTeacher = teachersList[i];
+			unitsList[i].unitCode = unitsCode[i];
+
+			unitsList[i].unitLabe = new JLabel(unitsList[i].unitName);
+			unitsList[i].teacherLabel = new JLabel(unitsList[i].unitTeacher);
+			unitsList[i].unitCodeLabel = new JLabel(unitsList[i].unitCode);
+
+			unitsList[i].unitLabe.setBounds(unitLabelx,yoffset,100,30);
+			unitsList[i].teacherLabel.setBounds(teacherLabelx,yoffset,100,30);
+			unitsList[i].unitCodeLabel.setBounds(codeLabelx,yoffset,200,30);
+
+			mainFrame.add(unitsList[i].unitLabe);
+			mainFrame.add(unitsList[i].teacherLabel);
+			mainFrame.add(unitsList[i].unitCodeLabel);
+
+			yoffset = yoffset + 40;
+		}
 	}
 	public static void teacherGrading(JFrame mainFrame,int id){
 		JLabel titleLabel = new JLabel("ارزشیابی اساتید");
@@ -186,10 +211,15 @@ public class studentPages {
 
 	}
 	public static void eshteghal(JFrame mainFrame,String nameStr){
-		functions.menuBar.student(mainFrame);	
+		
+		JLabel eshteghalNote = new JLabel();
+		eshteghalNote.setText("گواهی میشود دانشجو"+ nameStr + "در حال اشتغال به تحصیل میباشد");
+		
+		eshteghalNote.setBounds(500,250,400,400);
+
+		mainFrame.add(eshteghalNote);
 	}
 	public static void showKarname(JFrame mainFrame,int id){
-		functions.menuBar.student(mainFrame);	
 	}
 
 }
