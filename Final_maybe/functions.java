@@ -24,7 +24,6 @@ public class functions{
 			JMenu tahsiliKarname = new JMenu("کارنامه");
 			/* --karname submenu-- */
 			JMenuItem karnameMoshahede = new JMenuItem("مشاهده کارنامه");
-			JMenuItem karnameEteraz = new JMenuItem("اعتراض به نمره");
 			/* --mali menu submenu-- */
 			JMenuItem maliStatusPay = new JMenuItem("پرداخت و مشاهده تراز مالی");
 			JMenuItem maliVaam = new JMenuItem("درخواست وام");
@@ -50,7 +49,6 @@ public class functions{
 			menuTahsili.add(tahsiliKarname);
 			/* .:karname submenu:. */
 			tahsiliKarname.add(karnameMoshahede);
-			tahsiliKarname.add(karnameEteraz);
 			/* --mali submenu-- */
 			menuMali.add(maliStatusPay);
 			menuMali.add(maliVaam);
