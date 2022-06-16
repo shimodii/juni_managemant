@@ -32,7 +32,7 @@ public class studentPages {
 		JLabel unitCodeLabel = new JLabel("کد درس:");
 		JButton submitByCodeButton = new JButton("ثبت درس");
 		
-		unitSelectByCodeLabel.setBounds(650,160,200,30);
+		unitSelectByCodeLabel.setBounds(770,160,200,30);
 		unitCodeLabel.setBounds(770,190,100,30);
 		unitCodePrompt.setBounds(600,190,150,30);
 		submitByCodeButton.setBounds(600,260,130,40);
@@ -59,10 +59,10 @@ public class studentPages {
 			mainFrame.add(us[i].unitLabe);
 			mainFrame.add(us[i].teacherLabel);
 
-			mainFrame.add(unitSubmitButton);
-		}
+			}
 		unitSubmitButton.setBounds(100,yoffset,120,40);
-				
+		mainFrame.add(unitSubmitButton);
+
 	}
 	public static void removeUnit(JFrame mainFrame,int id){
 		//title 
