@@ -95,7 +95,10 @@ public class studentPages {
 	
 	}
 	public static void viewUnits(JFrame mainFrame,int id){
-		
+		String[] currentUnits = {"math","ap"}/*FROM DB*/;
+		unitForm[] unitsList = new unitForm[currentUnits.length];
+
+			
 	}
 	public static void teacherGrading(JFrame mainFrame,int id){
 		JLabel titleLabel = new JLabel("ارزشیابی اساتید");
