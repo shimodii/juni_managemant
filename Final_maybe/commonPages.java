@@ -1,7 +1,47 @@
 import javax.swing.*;
 
 public class commonPages {
+	
+	public static void login(JFrame mainFrame){
+		JLabel user_id = new JLabel("شماره کاربری:");
+		JLabel user_pass = new JLabel("رمز عبور:");
+		
+		JTextField usernameField = new JTextField(8);
+		JPasswordField passwordFiled = new JPasswordField(10);
+		
+		JRadioButton staffButton = new JRadioButton("کارکنان");
+		JRadioButton studentButton = new JRadioButton("دانشجویان");
+		JRadioButton teacherButton = new JRadioButton("اساتید");
+		
+		JButton loginButton = new JButton("ورود");
+		JButton guideButton = new JButton("راهنما");
+			
+		
+		user_id.setBounds(100,75,100,40); //username label
+		user_pass.setBounds(100,135,100,40); //password label
+		usernameField.setBounds(200,80,200,30); //username field
+		passwordFiled.setBounds(200,140,200,30); //password field
+		staffButton.setBounds(120,205,80,30); //staff button
+		teacherButton.setBounds(200,205,80,30); //teacher button
+		studentButton.setBounds(300,205,80,30); //student button
+		loginButton.setBounds(200,300,120,30); //login button
+		guideButton.setBounds(420,10,70,27); //guide button
 
+		
+		mainFrame.add(user_id);
+		mainFrame.add(user_pass);
+		mainFrame.add(usernameField);
+		mainFrame.add(passwordFiled);
+		mainFrame.add(staffButton);
+		mainFrame.add(studentButton);
+		mainFrame.add(teacherButton);
+		mainFrame.add(loginButton);
+		mainFrame.add(guideButton);
+
+		mainFrame.setSize(520,430);
+		mainFrame.setLayout(null);
+		mainFrame.setVisible(true);
+	}
 	public static void profileEdit(JFrame profPanel){
 		String notice = """
 			*موارد ستاره دار ضروری بوده و خالی گذاشتن فیلد های غیر ضروری به منزله عدم تغییر در آنهاست.
