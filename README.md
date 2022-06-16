@@ -14,7 +14,7 @@
 - [x] grading
 - [x] pardakht shahrie
 - [x] viewing taraz mali
-- [ ] loan
+- [x] loan
 - [x] morakhasi
 - [x] edit profile
 - [x] guide
