@@ -173,7 +173,7 @@ public class studentPages {
 		mainFrame.add(submitButton);
 	}
 	public static void eduStatus(JFrame mainFrame,int id){
-		
+				
 	}
 	public static void payment(JFrame mainFrame,int id){
 		int dept = 200/*STORE FROM DB*/;
@@ -220,6 +220,14 @@ public class studentPages {
 		mainFrame.add(eshteghalNote);
 	}
 	public static void showKarname(JFrame mainFrame,int id){
+		//store all marked 
+			
+		//get data by database
+
+		String[] cl = {"نام درس","نام استاد","نمره","ترم"};
+
+		JTable markTable = new JTable(/*dataFromDB*/,cl);
+
 	}
 
 }
