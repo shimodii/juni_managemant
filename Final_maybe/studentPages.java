@@ -13,7 +13,56 @@ public class studentPages {
 	}
 	
 	public static void unitSelect(JFrame mainFrame,int id){
+		String units_arr[] = {"math","ap","physics"}/*store from DB*/;
+		String teachers[] = {"rostami","minoofam","mahzoon"};
+		unitForm[] us = new unitForm[units_arr.length];
+		
+		int unitLabelx=100,chechBoxx=70,teacherLabelx=200,yoffset=150; 
+		
+		//title
+		JLabel titleLabel = new JLabel("انتخاب واحد");
+		titleLabel.setBounds(850,100,100,30);
+		mainFrame.add(titleLabel);
+
+		JButton unitSubmitButton = new JButton("ثبت دروس");
+		
+		//texfield form 
+		JLabel unitSelectByCodeLabel = new JLabel("انتخاب واحد با کد درس");
+		JTextField unitCodePrompt = new JTextField();
+		JLabel unitCodeLabel = new JLabel("کد درس:");
+		JButton submitByCodeButton = new JButton("ثبت درس");
+		
+		unitSelectByCodeLabel.setBounds(650,160,200,30);
+		unitCodeLabel.setBounds(770,190,100,30);
+		unitCodePrompt.setBounds(600,190,150,30);
+		submitByCodeButton.setBounds(600,260,130,40);
+
+		mainFrame.add(unitSelectByCodeLabel);
+		mainFrame.add(unitCodeLabel);
+		mainFrame.add(unitCodePrompt);
+		mainFrame.add(submitByCodeButton);
+
+
+		for (int i=0;i<us.length;i++) {
+			us[i] = new unitForm();
+			us[i].unitCb = new JCheckBox();
+			us[i].unitLabe = new JLabel(units_arr[i]);
+			us[i].teacherLabel = new JLabel(teachers[i]);
 			
+			us[i].unitCb.setBounds(chechBoxx,yoffset,20,20);
+			us[i].unitLabe.setBounds(unitLabelx,yoffset,100,30);
+			us[i].teacherLabel.setBounds(teacherLabelx,yoffset,100,30);
+			
+			yoffset = yoffset + 40;
+
+			mainFrame.add(us[i].unitCb);
+			mainFrame.add(us[i].unitLabe);
+			mainFrame.add(us[i].teacherLabel);
+
+			mainFrame.add(unitSubmitButton);
+		}
+		unitSubmitButton.setBounds(100,yoffset,120,40);
+				
 	}
 	public static void removeUnit(JFrame mainFrame,int id){
 		//title 
