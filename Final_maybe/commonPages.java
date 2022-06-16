@@ -1,7 +1,11 @@
 import javax.swing.*;
 
 public class commonPages {
-	
+	public static class loanDetail {
+		String money;
+		JLabel loanText;
+		JCheckBox loanCheck;
+	}
 	public static void login(JFrame mainFrame){
 		JLabel user_id = new JLabel("شماره کاربری:");
 		JLabel user_pass = new JLabel("رمز عبور:");
@@ -130,9 +134,37 @@ public class commonPages {
 	}
 	public static void loan(JFrame mainFrame,int id){
 	//	int userCredit=/*from db*/;
+		String[] loanMoney = {"40","70","100"};
+		loanDetail[] ld = new loanDetail[loanMoney.length];
+		
+		int checkBoxx=70,labelx=95,yoffset=120;
+
 		JLabel titleLabel = new JLabel("درخواست وام");
+		titleLabel.setBounds(850,120,100,30);
+		mainFrame.add(titleLabel);
+		
+		JButton submitLoanButton = new JButton("درخواست وام");
 
+		for(int i=0;i<ld.length;i++){
+			ld[i] = new loanDetail();
+			
+			ld[i].money = loanMoney[i];
+			
+			ld[i].loanText = new JLabel();
+			ld[i].loanText.setText("تومان"+ld[i].money);
+			
+			ld[i].loanCheck = new JCheckBox();
 
+			ld[i].loanText.setBounds(labelx,yoffset,100,30);
+			ld[i].loanCheck.setBounds(checkBoxx,yoffset,25,25);
 
+			mainFrame.add(ld[i].loanText);
+			mainFrame.add(ld[i].loanCheck);
+
+			yoffset = yoffset + 40;
+		}
+		yoffset = yoffset +20;
+		submitLoanButton.setBounds(120,yoffset,120,40);
+		mainFrame.add(submitLoanButton);
 	}
 }
