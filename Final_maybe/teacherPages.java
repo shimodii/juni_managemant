@@ -5,6 +5,30 @@ public class teacherPages {
 		String nameStr,studentCodeStr;
 		JLabel nameCodeLabel;
 		JTextField markField;
+
+		JLabel nameLbl,courseLbl,majorLbl;
+	}
+	public static void viewStudents(JFrame mainFrame,int id){
+		JLabel titleLabel = new JLabel("مشاهده لیست دانشجویان");
+		titleLabel.setBounds(900,100,100,30);
+		mainFrame.add(titleLabel);
+		
+		JLabel nameCourseMajor = new JLabel();
+		int namex=60,yoffset=170;
+
+		String[] studentsFirst = {} /*DB*/;
+		String[] studentLast = {} /*DB*/;
+		String[] courseName = {} /*DB*/;
+		String[] studentMajor = {} /*DB*/;
+
+		for(int i=0;i<studentsFirst.length;i++){
+			nameCourseMajor.setText(studentsFirst[i]+" "+studentLast[i]+" - "+courseName[i]+" - "+studentMajor[i]);
+			nameCourseMajor.setBounds(namex,yoffset,400,30);
+			mainFrame.add(nameCourseMajor);
+
+			yoffset = yoffset + 50;
+		}
+			
 	}
 	public static void mainPage(JFrame mainFrame){
 	
