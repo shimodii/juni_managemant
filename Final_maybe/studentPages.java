@@ -181,7 +181,29 @@ public class studentPages {
 		mainFrame.add(submitButton);
 	}
 	public static void eduStatus(JFrame mainFrame,int id){
-				
+		String[] passedUnits ={} /*DB*/;
+		int[] passedMarks={} /*DB*/;
+		unitForm[] educStatus = new unitForm[passedUnits.length];
+		
+		JLabel titleLabel = new JLabel("وضعیت تحصیلی");
+		titleLabel.setBounds(900,100,100,30);
+		mainFrame.add(titleLabel);
+
+		int	unitx=50,markx=160,yoffset=150;
+		for(int i=0;i<passedUnits.length;i++){
+			educStatus[i] = new unitForm();
+
+			educStatus[i].unitLabe = new JLabel(passedUnits[i]);
+			educStatus[i].unitCodeLabel = new JLabel(passedMarks[i]);
+
+			educStatus[i].unitLabe.setBounds(unitx,yoffset,100,30);
+			educStatus[i].unitCodeLabel.setBounds(markx,yoffset,100,30);
+
+			yoffset = yoffset + 50;
+
+			mainFrame.add(educStatus[i].unitLabe);
+			mainFrame.add(educStatus[i].unitCodeLabel);
+		}
 	}
 	public static void payment(JFrame mainFrame,int id){
 		int dept = 200/*STORE FROM DB*/;
@@ -228,14 +250,40 @@ public class studentPages {
 		mainFrame.add(eshteghalNote);
 	}
 	public static void showKarname(JFrame mainFrame,int id){
-		//store all marked 
-			
-		//get data by database
 
-		String[] cl = {"نام درس","نام استاد","نمره","ترم"};
+		String[] passedUnits ={} /*DB*/;
+		int[] passedMarks={} /*DB*/;
+		unitForm[] educStatus = new unitForm[passedUnits.length];
+		
+		JLabel titleLabel = new JLabel("وضعیت تحصیلی");
+		titleLabel.setBounds(900,100,100,30);
+		mainFrame.add(titleLabel);
 
-		JTable markTable = new JTable(/*dataFromDB*/,cl);
+		int	unitx=50,markx=160,yoffset=150;
+		for(int i=0;i<passedUnits.length;i++){
+			educStatus[i] = new unitForm();
 
+			educStatus[i].unitLabe = new JLabel(passedUnits[i]);
+			educStatus[i].unitCodeLabel = new JLabel(passedMarks[i]);
+
+			educStatus[i].unitLabe.setBounds(unitx,yoffset,100,30);
+			educStatus[i].unitCodeLabel.setBounds(markx,yoffset,100,30);
+
+			yoffset = yoffset + 50;
+
+			mainFrame.add(educStatus[i].unitLabe);
+			mainFrame.add(educStatus[i].unitCodeLabel);
+		}
+		
+		yoffset = yoffset + 30;
+
+		int av;
+		for(int i=0;i<passedMarks.length;i++){
+			av = av + passedMarks[i];
+		}
+		av = av / (passedMarks.length);
+		JLabel avLabel = new JLabel(" معدل "+ av);
+		avLabel.setBounds(unitx,yoffset,100,30);
 	}
 
 }
