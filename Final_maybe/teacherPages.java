@@ -6,6 +6,14 @@ public class teacherPages {
 		JLabel nameCodeLabel;
 		JTextField markField;
 	}
+	public static void mainPage(JFrame mainFrame){
+	
+		JLabel mainPageLabel = new JLabel("جونی منیجمنت، زیبا پیشرو مطمئن");
+
+		mainPageLabel.setBounds(450,450,200,30);
+
+		mainFrame.add(mainPageLabel);
+	}
 	public static void grading (JFrame mainFrame,int id) {
 		String[] studentNames = {"خیارش","سینا","امیرمحمد"};
 		String[] studentCodes = {"123","456","789"};
@@ -34,5 +42,38 @@ public class teacherPages {
 
 		submitMarksButton.setBounds(nameLabelx,yoffset,130,40);
 		mainFrame.add(submitMarksButton);
-	}	
+	}
+	public static void dept(JFrame mainFrame,int id){
+		Jlabel titleLabel = new JLabel("مشاهده تراز مالی");
+		titleLabel.setBounds(900,150,100,30);
+		mainFrame.add(titleLabel);
+
+
+		int mark = /* from db */;
+		int dept = /* from db */;
+		JLabel deptNewLabel;
+		JLabel pointStatus = new JLabel();
+		JLabel mainDeptLabel = new JLabel(dept);
+		
+		pointStatus.setText("بدون پاداش یا کسری");
+		
+		if (mark > 0){
+			dept = dept + (dept * 0.05);
+			deptNewLabel = new JLabel(dept + "ریال");
+			pointStatus.setText("با ۵% پاداش به دلیل رضایت دانشجو");
+		}else if (mark < 0){
+			dept = dept - (dept * 0.05);
+			deptNewLabel = new JLabel(dept + "ریال");
+			pointStatus.setText("با ۵% کسری به دلیل عدم رضایت دانشجو");
+		}
+		
+		
+		pointStatus.setBounds(200,230,100,30);
+		deptNewLabel.setBounds(200,280,100,30);
+		mainDeptLabel.setBounds(200,330,100,30);
+
+		mainFrame.add(pointStatus);
+		mainFrame.add(deptNewLabel);
+		mainFrame.add(mainDeptLabel);
+	}
 }
