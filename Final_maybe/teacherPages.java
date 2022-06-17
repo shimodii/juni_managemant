@@ -8,6 +8,27 @@ public class teacherPages {
 
 		JLabel nameLbl,courseLbl,majorLbl;
 	}
+	public static void viewUnits(JFrame mainFrame,int id){
+		JLabel titleLabel = new JLabel("مشاهده دروس");
+		titleLabel.setBounds(900,100,100,30);
+		mainFrame.add(titleLabel);
+		
+		JLabel courseIdPup = new JLabel();
+		int namex=60,yoffset=170;
+
+		String[] courseNameList = {}/*DB*/;
+		String[] courseIdList = {}/*DB*/;
+		String[] coursePupList = {}/*DB*/;
+
+
+		for(int i=0;i<studentsFirst.length;i++){
+			courseIdPup.setText(courseNameList[i]+":"+courseIdList[i]+"           "+coursePupList[i]);
+			courseIdPup.setBounds(namex,yoffset,400,30);
+			mainFrame.add(courseIdPup);
+
+			yoffset = yoffset + 50;
+		}
+	}
 	public static void viewStudents(JFrame mainFrame,int id){
 		JLabel titleLabel = new JLabel("مشاهده لیست دانشجویان");
 		titleLabel.setBounds(900,100,100,30);
