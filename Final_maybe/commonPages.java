@@ -6,6 +6,74 @@ public class commonPages {
 		JLabel loanText;
 		JCheckBox loanCheck;
 	}
+	public static void register(JFrame mainFrame){
+		JLabel titleLabel = new JLabel("ثبت نام");
+		titleLabel.setBounds(900,150,150,30);
+		mainFrame.add(titleLabel);
+
+		//name
+		JLabel nameLabel = new JLabel("نام");
+		nameLabel.setBounds(50,200,50,30);
+		mainFrame.add(nameLabel);
+
+		JTextField nameField = new JTextField();
+		nameField.setBounds(150,200,80,30);
+		mainFrame.add(nameField);
+
+		//lastname
+		JLabel lastnameLabel = new JLabel("نام خانوادگی");
+		lastnameLabel.setBounds(50,250,100,30);
+		mainFrame.add(lastnameLabel);
+
+		JTextField lastnameField = new JTextField();
+		lastnameField.setBounds(150,250,80,30);
+		mainFrame.add(lastnameField);
+
+		//codemelli
+		JLabel codeLabel = new JLabel("کد ملی");
+		codeLabel.setBounds(50,300,100,30);
+		mainFrame.add(codeLabel);
+
+		JTextField codeField = new JTextField();
+		codeField.setBounds(150,300,80,30);
+		mainFrame.add(codeField);
+
+		//phone
+		JLabel phoneLabel = new JLabel("شماره تلفن");
+		phoneLabel.set(50,350,100,30);
+		mainFrame.add(phoneLabel);
+
+		JTextField phoneField = new JTextField();
+		phoneField.setBounds(150,350,80,30);
+		mainFrame.add(phoneField);
+
+		//password
+		JLabel passwordLabel = new JLabel("ایجاد رمز");
+		passwordLabel.setBounds(50,450,100,30);
+		mainFrame.add(passwordLabel);
+
+		JPasswordField passwordFiled = new JPasswordField();
+		passwordFiled.setBounds(150,450,80,30);
+		mainFrame.add(passwordFiled);
+
+		//branch code
+		JLabel branchCodeLabel = new JLabel("کد رشته");
+		branchCodeLabel.setBounds(50,400,100,30);
+		mainFrame.add(branchCodeLabel);
+
+		JTextField branchCodeField = new JTextField();
+		branchCodeField.setBounds(150,400,80,30);
+		mainFrame.add(branchCodeField);
+
+		//sub butt
+		JButton regButt = new JButton("ثبت");
+		regButt.setBounds(90,500,50,40);
+		mainFrame.add(regButt);
+		
+
+		
+	}
+
 	public static void login(JFrame mainFrame){
 		JLabel user_id = new JLabel("شماره کاربری:");
 		JLabel user_pass = new JLabel("رمز عبور:");
